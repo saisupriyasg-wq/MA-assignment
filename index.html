@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thistle | Modern Continental Dining</title>
+  <meta name="description" content="Thistle is a modern continental restaurant serving fresh pasta, seasonal plates and desserts.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google tag (GA4) - replace G-XXXXXXXXXX with your Measurement ID -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header>
+  <nav class="container nav" aria-label="Main navigation">
+    <a class="logo" href="index.html">Thistle<span>.</span></a>
+    <button class="menu-btn" id="menu-btn" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-list">☰</button>
+    <ul id="nav-list">
+      <li><a href="index.html" aria-current="page">Home</a></li>
+      <li><a href="products.html">Menu</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+  <section class="hero">
+    <div class="container">
+      <h1>Continental, Made Fresh.</h1>
+      <p>Hand-rolled pasta, slow-cooked classics and desserts worth the queue. Your new favourite table in the city.</p>
+      <div class="btns">
+        <a class="btn" href="products.html">Explore the Menu</a>
+        <a class="btn btn-outline" href="contact.html">Reserve a Table</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container split">
+      <div>
+        <h2 class="section-title" style="text-align:left">Welcome to Thistle</h2>
+        <p>Thistle is a neighbourhood continental restaurant for people who love good food and good company. We take European classics, from Italian pasta to French pastries and Spanish tapas, and cook them with seasonal ingredients and a modern touch.</p>
+        <p style="margin:1rem 0 1.5rem">Relaxed evenings, long brunches or a quick coffee and dessert. There is always a seat for you.</p>
+        <a class="btn btn-dark" href="about.html">Our Story</a>
+      </div>
+      <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=70" alt="Warm, candle-lit interior of the Thistle restaurant" loading="lazy">
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="container">
+      <h2 class="section-title">Guest Favourites</h2>
+      <p class="section-sub">Three plates our regulars order again and again.</p>
+      <div class="grid">
+        <article class="card">
+          <div class="img-wrap"><img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=700&q=70" alt="Creamy mushroom tagliatelle" loading="lazy"></div>
+          <div class="card-body"><span class="tag">Mains</span><h3>Wild Mushroom Tagliatelle</h3><p>Fresh egg pasta, garlic, thyme and a parmesan cream sauce.</p>
+            <div class="card-foot"><span class="price">₹495</span><a class="btn btn-sm btn-dark" href="products.html">Explore</a></div></div>
+        </article>
+        <article class="card">
+          <div class="img-wrap"><img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=700&q=70" alt="Pan-seared salmon with greens" loading="lazy"></div>
+          <div class="card-body"><span class="tag">Mains</span><h3>Pan-Seared Salmon</h3><p>Crisp-skin salmon, lemon butter, asparagus and baby potatoes.</p>
+            <div class="card-foot"><span class="price">₹695</span><a class="btn btn-sm btn-dark" href="products.html">Explore</a></div></div>
+        </article>
+        <article class="card">
+          <div class="img-wrap"><img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=700&q=70" alt="Chocolate dessert with berries" loading="lazy"></div>
+          <div class="card-body"><span class="tag">Desserts</span><h3>Dark Chocolate Fondant</h3><p>Warm molten centre served with vanilla bean ice cream.</p>
+            <div class="card-foot"><span class="price">₹325</span><a class="btn btn-sm btn-dark" href="products.html">Explore</a></div></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="container">
+      <h2>Hungry yet?</h2>
+      <p>Browse the full menu or get in touch to plan your next dinner with us.</p>
+      <a class="btn" href="products.html">View Full Menu</a>
+      <a class="btn btn-outline" href="contact.html">Contact Us</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="container cols">
+    <div><h3>Thistle.</h3><p>Modern continental dining, made fresh daily.</p></div>
+    <div><h3>Visit</h3><ul><li>12 Garden Lane, Indiranagar</li><li>Bengaluru 560038</li><li><a href="tel:+910000000000">+91 00000 00000</a></li><li><a href="mailto:hello@thistle.example">hello@thistle.example</a></li></ul></div>
+    <div><h3>Follow</h3><ul><li><a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a></li><li><a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a></li><li><a href="https://x.com" target="_blank" rel="noopener">X (Twitter)</a></li></ul></div>
+  </div>
+  <p class="copy">© <span class="year">2026</span> Thistle. Sample website for a course project.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
