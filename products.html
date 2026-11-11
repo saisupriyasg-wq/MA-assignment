@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Menu | Thistle</title>
+  <meta name="description" content="Explore the Thistle menu: starters, mains, desserts and drinks.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google tag (GA4) - replace G-XXXXXXXXXX with your Measurement ID -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header>
+  <nav class="container nav" aria-label="Main navigation">
+    <a class="logo" href="index.html">Thistle<span>.</span></a>
+    <button class="menu-btn" id="menu-btn" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-list">☰</button>
+    <ul id="nav-list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html" aria-current="page">Menu</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+  <div class="page-banner"><div class="container"><h1>Our Menu</h1><p>Seasonal, fresh and made to share.</p></div></div>
+
+  <section>
+    <div class="container">
+      <div class="filters" role="group" aria-label="Filter menu by category">
+        <button class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+        <button class="filter-btn" data-filter="starters" aria-pressed="false">Starters</button>
+        <button class="filter-btn" data-filter="mains" aria-pressed="false">Mains</button>
+        <button class="filter-btn" data-filter="desserts" aria-pressed="false">Desserts</button>
+        <button class="filter-btn" data-filter="drinks" aria-pressed="false">Drinks</button>
+      </div>
+
+      <div class="grid">
+        <article class="card" data-id="TH-001" data-name="Burrata &amp; Heirloom Tomato" data-price="395" data-category="starters" data-desc="Creamy burrata, heirloom tomatoes, basil oil and toasted sourdough.">
+          <div class="img-wrap"><img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=700&q=70" alt="Fresh salad bowl with tomatoes" loading="lazy"></div>
+          <div class="card-body"><span class="tag">Starters</span><h3>Burrata &amp; Heirloom Tomato</h3><p>Creamy burrata, ripe tomatoes, basil oil and toasted sourdough.</p>
+            <div class="card-foot"><span class="price">₹395</span><button class="btn btn-sm btn-dark details-btn">View Details</button></div></div>
+        </article>
+
+        <article class="card" data-id="TH-002" data-name="Garlic Prawn Gambas" data-price="445" data-category="starters" data-desc="Spanish-style prawns sizzled in garlic, chilli and olive oil, served with crusty bread.">
+          <div class="img-wrap"><img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?auto=format&fit=crop&w=700&q=70" alt="Plated starter with prawns" loading="lazy"></div>
+          <div class="card-body"><span class="tag">Starters</span><h3>Garlic Prawn Gambas</h3><p>Prawns sizzled in garlic, chilli and olive oil with crusty bread.</p>
+            <div class="card-foot"><span class="price">₹445</span><button class="btn btn-sm btn-dark details-btn">View Details</button></div></div>
+        </article>
+
+        <article class="card" data-id="TH-003" data-name="Wild Mushroom Tagliatelle" data-price="495" data-category="mains" data-desc="Fresh egg tagliatelle with wild mushrooms, garlic, thyme and parmesan cream. Vegetarian.">
+          <div class="img-wrap"><img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=700&q=70" alt="Creamy mushroom tagliatelle" loading="lazy"></div>
+          <div class="card-body"><span class="tag">Mains</span><h3>Wild Mushroom Tagliatelle</h3><p>Fresh egg pasta in a garlic, thyme and parmesan cream sauce.</p>
+            <div class="card-foot"><span class="price">₹495</span><button class="btn btn-sm btn-dark details-btn">View Details</button></div></div>
+        </article>
+
+        <article class="card" data-id="TH-004" data-name="Pan-Seared Salmon" data-price="695" data-category="mains" data-desc="Crisp-skin salmon fillet with lemon butter sauce, grilled asparagus and baby potatoes.">
+          <div class="img-wrap"><img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=700&q=70" alt="Seared salmon with vegetables" loading="lazy"></div>
+          <div class="card-body"><span class="tag">Mains</span><h3>Pan-Seared Salmon</h3><p>Lemon butter, grilled asparagus and baby potatoes.</p>
+            <div class="card-foot"><span class="price">₹695</span><button class="btn btn-sm btn-dark details-btn">View Details</button></div></div>
+        </article>
+
+        <article class="card" data-id="TH-005" data-name="Dark Chocolate Fondant" data-price="325" data-category="desserts" data-desc="Warm dark chocolate cake with a molten centre, berries and vanilla bean ice cream. Takes 12 minutes to bake.">
+          <div class="img-wrap"><img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=700&q=70" alt="Chocolate dessert with berries" loading="lazy"></div>
+          <div class="card-body"><span class="tag">Desserts</span><h3>Dark Chocolate Fondant</h3><p>Molten centre with vanilla bean ice cream.</p>
+            <div class="card-foot"><span class="price">₹325</span><button class="btn btn-sm btn-dark details-btn">View Details</button></div></div>
+        </article>
+
+        <article class="card" data-id="TH-006" data-name="Lemon Basil Cheesecake" data-price="295" data-category="desserts" data-desc="Baked cheesecake with a zesty lemon curd and a hint of fresh basil on a biscuit base.">
+          <div class="img-wrap"><img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=700&q=70" alt="Slice of cake on a plate" loading="lazy"></div>
+          <div class="card-body"><span class="tag">Desserts</span><h3>Lemon Basil Cheesecake</h3><p>Zesty lemon curd on a buttery biscuit base.</p>
+            <div class="card-foot"><span class="price">₹295</span><button class="btn btn-sm btn-dark details-btn">View Details</button></div></div>
+        </article>
+
+        <article class="card" data-id="TH-007" data-name="Lavender Iced Latte" data-price="225" data-category="drinks" data-desc="Double-shot espresso, cold milk and house-made lavender syrup over ice.">
+          <div class="img-wrap"><img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=700&q=70" alt="Iced coffee in a glass" loading="lazy"></div>
+          <div class="card-body"><span class="tag">Drinks</span><h3>Lavender Iced Latte</h3><p>Espresso, cold milk and house-made lavender syrup.</p>
+            <div class="card-foot"><span class="price">₹225</span><button class="btn btn-sm btn-dark details-btn">View Details</button></div></div>
+        </article>
+
+        <article class="card" data-id="TH-008" data-name="Sparkling Elderflower Cooler" data-price="195" data-category="drinks" data-desc="Elderflower cordial, fresh mint, cucumber and sparkling water. Non-alcoholic.">
+          <div class="img-wrap"><img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=700&q=70" alt="Refreshing drink with mint" loading="lazy"></div>
+          <div class="card-body"><span class="tag">Drinks</span><h3>Sparkling Elderflower Cooler</h3><p>Elderflower, mint, cucumber and soda.</p>
+            <div class="card-foot"><span class="price">₹195</span><button class="btn btn-sm btn-dark details-btn">View Details</button></div></div>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<dialog id="detail-dialog" aria-labelledby="dlg-title">
+  <h3 id="dlg-title"></h3>
+  <p id="dlg-desc"></p>
+  <span class="price" id="dlg-price"></span>
+  <a class="btn btn-sm" href="contact.html">Reserve a Table</a>
+  <button class="btn btn-sm btn-dark close-dlg" type="button">Close</button>
+</dialog>
+
+<footer class="site">
+  <div class="container cols">
+    <div><h3>Thistle.</h3><p>Modern continental dining, made fresh daily.</p></div>
+    <div><h3>Visit</h3><ul><li>12 Garden Lane, Indiranagar</li><li>Bengaluru 560038</li><li><a href="tel:+910000000000">+91 00000 00000</a></li><li><a href="mailto:hello@thistle.example">hello@thistle.example</a></li></ul></div>
+    <div><h3>Follow</h3><ul><li><a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a></li><li><a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a></li><li><a href="https://x.com" target="_blank" rel="noopener">X (Twitter)</a></li></ul></div>
+  </div>
+  <p class="copy">© <span class="year">2026</span> Thistle. Sample website for a course project.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
